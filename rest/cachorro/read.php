@@ -32,7 +32,13 @@ if($num>0){
  
         $cachorro_item=array(
             "id" => $id,
-            "objeto_html" => $objeto_html,
+            "raza" => $raza,
+            "id" => $id,
+            "nombres" => $nombres,
+            "origen" => $origen,
+            "tamanio" => $tamanio,
+            "img" => $img,
+            
         );
  
         array_push($cachorros_arr["records"], $cachorro_item);

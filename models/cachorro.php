@@ -7,7 +7,11 @@ class Cachorro{
  
     // object properties
     public $id;
-    public $objeto_html;
+    public $raza;
+    public $nombres;
+    public $origen;
+    public $tamanio;
+    public $img;
 
  
     // constructor with $db as database connection
@@ -21,7 +25,7 @@ class Cachorro{
     public function read(){
  
     // select all query
-    $query = "SELECT  id as id, objeto_html as objeto_html FROM . $this->table_name  ";
+    $query = "SELECT  id as id, raza as raza, nombres as nombres, origen as origen, tamanio as tamanio, img as img FROM . $this->table_name  ";
  
     // prepare query statement
     $stmt = $this->conn->prepare($query);

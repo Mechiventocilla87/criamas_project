@@ -1510,56 +1510,58 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.6rem; }
-    .puppies .galeria .galeria-container .section_small .box_raza_small {
+    margin-bottom: 1.6rem;
+    flex-wrap: wrap; }
+    .puppies .galeria .galeria-container .section_small .box_raza {
       width: 49%;
-      display: flex; }
-      .puppies .galeria .galeria-container .section_small .box_raza_small .box_image {
+      display: flex;
+      margin-bottom: 2rem; }
+      .puppies .galeria .galeria-container .section_small .box_raza .box_image {
         width: 50%; }
-        .puppies .galeria .galeria-container .section_small .box_raza_small .box_image img {
+        .puppies .galeria .galeria-container .section_small .box_raza .box_image img {
           width: 100%;
           height: auto; }
-      .puppies .galeria .galeria-container .section_small .box_raza_small .datos {
+      .puppies .galeria .galeria-container .section_small .box_raza .datos {
         width: 50%;
-        background-color: #fcb4b4;
-        padding: 1.37rem; }
+        padding: 1.4rem; }
 
-.box_raza_small .datos .titulos {
+.box_raza .datos .titulos {
   color: #403944;
   font-size: 1.8rem;
   border-bottom: 2px solid #403944;
   padding-bottom: 0.3rem; }
-  .box_raza_small .datos .titulos .iconos {
+  .box_raza .datos .titulos .iconos {
     margin-bottom: 0.3rem;
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .box_raza_small .datos .titulos .iconos .box_heart {
+    .box_raza .datos .titulos .iconos .box_heart {
       border: 1px solid #403944;
       border-radius: 50%;
       width: 21%;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 2.7rem; }
-      .box_raza_small .datos .titulos .iconos .box_heart .fa-heart {
+      height: 2.7rem;
+      display: none; }
+      .box_raza .datos .titulos .iconos .box_heart .fa-heart {
         font-size: 1.5rem; }
-  .box_raza_small .datos .titulos h6 {
-    font-family: 'Poppins', sans-serif;
+  .box_raza .datos .titulos h6 {
+    font-family: "Poppins", sans-serif;
     font-weight: 600; }
 
-.box_raza_small .datos .descripcion {
+.box_raza .datos .descripcion {
   font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
   color: #403944; }
-  .box_raza_small .datos .descripcion .first_p {
+  .box_raza .datos .descripcion .first_p {
     font-style: italic;
     font-weight: 500;
     margin-top: 1rem;
     margin-bottom: 0.2rem; }
-  .box_raza_small .datos .descripcion .second_p .bold_origin {
+  .box_raza .datos .descripcion .second_p .bold_origin {
     font-weight: 500; }
-  .box_raza_small .datos .descripcion .boton_compracachorros {
+  .box_raza .datos .descripcion .boton_compracachorros {
     font-family: "Poppins", sans-serif;
     border-radius: 1.25rem;
     background-color: transparent;
@@ -1571,150 +1573,19 @@
     transition: all 0.5s ease-in-out 0s;
     padding: 0.3rem 0.6rem;
     width: 44%; }
-    .box_raza_small .datos .descripcion .boton_compracachorros:hover {
+    .box_raza .datos .descripcion .boton_compracachorros:hover {
       background-color: #403944;
       color: white;
       transition: all 0.5s ease-in-out 0s; }
 
-.section_medium {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1.6rem; }
-  .section_medium .box_raza_medium {
-    width: 49%;
-    display: flex; }
-    .section_medium .box_raza_medium .box_image {
-      width: 50%; }
-      .section_medium .box_raza_medium .box_image img {
-        width: 100%;
-        height: auto; }
-    .section_medium .box_raza_medium .datos {
-      width: 50%;
-      background-color: #ffd9be;
-      padding: 1.37rem; }
+.chico {
+  background-color: #fcb4b4; }
 
-.box_raza_medium .datos .titulos {
-  color: #403944;
-  font-size: 1.8rem;
-  border-bottom: 2px solid #403944;
-  padding-bottom: 0.3rem; }
-  .box_raza_medium .datos .titulos .iconos {
-    margin-bottom: 0.3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .box_raza_medium .datos .titulos .iconos .box_heart {
-      border: 1px solid #403944;
-      border-radius: 50%;
-      width: 21%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 2.7rem; }
-      .box_raza_medium .datos .titulos .iconos .box_heart .fa-heart {
-        font-size: 1.5rem; }
-  .box_raza_medium .datos .titulos h6 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600; }
+.mediano {
+  background-color: #ffd9be; }
 
-.box_raza_medium .datos .descripcion {
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.95rem;
-  color: #403944; }
-  .box_raza_medium .datos .descripcion .first_p {
-    font-style: italic;
-    font-weight: 500;
-    margin-top: 1rem;
-    margin-bottom: 0.2rem; }
-  .box_raza_medium .datos .descripcion .second_p .bold_origin {
-    font-weight: 500; }
-  .box_raza_medium .datos .descripcion .boton_compracachorros {
-    font-family: "Poppins", sans-serif;
-    border-radius: 1.25rem;
-    background-color: transparent;
-    padding: 0.5rem 0.9375rem;
-    color: #403944;
-    font-size: 0.8rem;
-    border: 2px solid #403944;
-    text-decoration: none;
-    transition: all 0.5s ease-in-out 0s;
-    padding: 0.3rem 0.6rem;
-    width: 44%; }
-    .box_raza_medium .datos .descripcion .boton_compracachorros:hover {
-      background-color: #403944;
-      color: white;
-      transition: all 0.5s ease-in-out 0s; }
-
-.section_large {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1.6rem; }
-  .section_large .box_raza_large {
-    width: 49%;
-    display: flex; }
-    .section_large .box_raza_large .box_image {
-      width: 50%; }
-      .section_large .box_raza_large .box_image img {
-        width: 100%;
-        height: auto; }
-    .section_large .box_raza_large .datos {
-      width: 50%;
-      background-color: #ccd0d7;
-      padding: 1.37rem; }
-
-.box_raza_large .datos .titulos {
-  color: #403944;
-  font-size: 1.8rem;
-  border-bottom: 2px solid #403944;
-  padding-bottom: 0.3rem; }
-  .box_raza_large .datos .titulos .iconos {
-    margin-bottom: 0.3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .box_raza_large .datos .titulos .iconos .box_heart {
-      border: 1px solid #403944;
-      border-radius: 50%;
-      width: 21%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 2.7rem; }
-      .box_raza_large .datos .titulos .iconos .box_heart .fa-heart {
-        font-size: 1.5rem; }
-  .box_raza_large .datos .titulos h6 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600; }
-
-.box_raza_large .datos .descripcion {
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.95rem;
-  color: #403944; }
-  .box_raza_large .datos .descripcion .first_p {
-    font-style: italic;
-    font-weight: 500;
-    margin-top: 1rem;
-    margin-bottom: 0.2rem; }
-  .box_raza_large .datos .descripcion .second_p .bold_origin {
-    font-weight: 500; }
-  .box_raza_large .datos .descripcion .boton_compracachorros {
-    font-family: "Poppins", sans-serif;
-    border-radius: 1.25rem;
-    background-color: transparent;
-    padding: 0.5rem 0.9375rem;
-    color: #403944;
-    font-size: 0.8rem;
-    border: 2px solid #403944;
-    text-decoration: none;
-    transition: all 0.5s ease-in-out 0s;
-    padding: 0.3rem 0.6rem;
-    width: 44%; }
-    .box_raza_large .datos .descripcion .boton_compracachorros:hover {
-      background-color: #403944;
-      color: white;
-      transition: all 0.5s ease-in-out 0s; }
+.grande {
+  background-color: #ccd0d7; }
 
 .active {
   background-color: white;

@@ -2178,168 +2178,80 @@ $color_box_large: #ccd0d7;
   }
 }
 
-.puppies{
-  .galeria{
+.puppies {
+  .galeria {
     margin-top: 5rem;
-    .galeria-container{
-      .section_small{
+    .galeria-container {
+      .section_small {
         width: 100%;
         display: flex;
         justify-content: space-between;
         margin-bottom: 1.6rem;
-        .box_raza_small{
+        flex-wrap: wrap;
+        .box_raza {
           width: 49%;
           display: flex;
-          .box_image{
+          margin-bottom: 2rem;
+          .box_image {
             width: 50%;
-            img{
+            img {
               width: 100%;
               height: auto;
             }
           }
-          .datos{
+          .datos {
             width: 50%;
-            background-color: $color_box_small;
-            padding: 1.37rem;
-  
+            padding: 1.4rem;
           }
         }
       }
-    }    
+    }
   }
 }
 
-.box_raza_small{
-  .datos{
-    .titulos{
+.box_raza {
+  .datos {
+    .titulos {
       @include titulos_cachorros();
-      .iconos{
+      .iconos {
         @include iconos_cachorros();
-        .box_heart{
+        .box_heart {
           @include box-heart();
+          display: none;
+
         }
       }
 
-      h6{
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600; 
+      h6 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
       }
     }
   }
 }
 
-.box_raza_small{
-  .datos{
-    .descripcion{
-     @include descripcion-cachorro();
+.box_raza {
+  .datos {
+    .descripcion {
+      @include descripcion-cachorro();
     }
   }
 }
 
 
-.section_medium{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1.6rem;
 
-  .box_raza_medium{
-    width: 49%;
-    display: flex;
-    .box_image{
-      width: 50%;
-      img{
-        width: 100%;
-        height: auto;
-      }
-    }
-    .datos{
-      width: 50%;
-      background-color: $color_box_medium;
-      padding: 1.37rem;
-
-    }
-  }
+.chico{
+  background-color: $color_box_small;
 }
 
-.box_raza_medium{
-  .datos{
-    .titulos{
-      @include titulos_cachorros();
-      .iconos{
-        @include iconos_cachorros();
-        .box_heart{
-          @include box-heart();
-        }
-      }
-
-      h6{
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600; 
-      }
-    }
-  }
+.mediano{
+  background-color: $color_box_medium;
 }
 
-.box_raza_medium{
-  .datos{
-    .descripcion{
-     @include descripcion-cachorro();
-    }
-  }
+.grande{
+  background-color: $color_box_large;
 }
 
-.section_large{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1.6rem;
-
-  .box_raza_large{
-    width: 49%;
-    display: flex;
-    .box_image{
-      width: 50%;
-      img{
-        width: 100%;
-        height: auto;
-      }
-    }
-    .datos{
-      width: 50%;
-      background-color: $color_box_large;
-      padding: 1.37rem;
-
-    }
-  }
-}
-
-.box_raza_large{
-  .datos{
-    .titulos{
-      @include titulos_cachorros();
-      .iconos{
-        @include iconos_cachorros();
-        .box_heart{
-          @include box-heart();
-        }
-      }
-
-      h6{
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600; 
-      }
-    }
-  }
-}
-
-.box_raza_large{
-  .datos{
-    .descripcion{
-     @include descripcion-cachorro();
-    }
-  }
-}
 
 .active{
   background-color: white;
