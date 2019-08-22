@@ -1,5 +1,5 @@
 <?php
-use Restserver\Libraries\REST_Controller;
+use Criamas\Libraries\REST_Controller;
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 // This can be removed if you use __autoload() in config.php OR use Modular Extensions
@@ -19,7 +19,7 @@ require APPPATH . 'libraries/Format.php';
  * @license         MIT
  * @link            https://github.com/chriskacerguis/codeigniter-restserver
  */
-class Example extends RESTController {
+class Example extends REST_Controller {
 
 	function __construct()
 	{
