@@ -607,7 +607,7 @@
     width: 30%;
     height: 6rem;
     margin: auto;
-    background-image: url("../../images/img_svg/comillas-01.svg");
+    background-image: url("/assets/images/img_svg/comillas-01.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -798,7 +798,7 @@
           height: 5rem; } }
 .join {
   background-color: #fcb4b4;
-  background-image: url("../img_svg/fondo-02-01.svg"); }
+  background-image: url("/assets/images/img_svg/fondo-02-01.svg"); }
   .join .join-box {
     margin: auto;
     width: 80%;
@@ -1510,7 +1510,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
     margin-bottom: 1.6rem;
     flex-wrap: wrap; }
     .puppies .galeria .galeria-container .section_small .box_raza {
@@ -1527,7 +1526,6 @@
         padding: 1.4rem; }
 
 .box_raza .datos .titulos {
-=======
     margin-bottom: 1.6rem; }
     .puppies .galeria .galeria-container .section_small .box_raza_small {
       width: 49%;
@@ -1548,27 +1546,20 @@
   font-size: 1.8rem;
   border-bottom: 2px solid #403944;
   padding-bottom: 0.3rem; }
-<<<<<<< HEAD
-  .box_raza .datos .titulos .iconos {
-=======
+
   .box_raza_small .datos .titulos .iconos {
->>>>>>> 95f06a193039a09134ae56b00bbf13cc729760d5
     margin-bottom: 0.3rem;
     display: flex;
     justify-content: space-between;
     align-items: center; }
-<<<<<<< HEAD
+
     .box_raza .datos .titulos .iconos .box_heart {
-=======
-    .box_raza_small .datos .titulos .iconos .box_heart {
->>>>>>> 95f06a193039a09134ae56b00bbf13cc729760d5
       border: 1px solid #403944;
       border-radius: 50%;
       width: 21%;
       display: flex;
       justify-content: center;
       align-items: center;
-<<<<<<< HEAD
       height: 2.7rem;
       display: none; }
       .box_raza .datos .titulos .iconos .box_heart .fa-heart {
@@ -1665,20 +1656,14 @@
   font-size: 0.95rem;
   color: #403944; }
   .box_raza_medium .datos .descripcion .first_p {
->>>>>>> 95f06a193039a09134ae56b00bbf13cc729760d5
     font-style: italic;
     font-weight: 500;
     margin-top: 1rem;
     margin-bottom: 0.2rem; }
-<<<<<<< HEAD
-  .box_raza .datos .descripcion .second_p .bold_origin {
-    font-weight: 500; }
-  .box_raza .datos .descripcion .boton_compracachorros {
-=======
+
   .box_raza_medium .datos .descripcion .second_p .bold_origin {
     font-weight: 500; }
   .box_raza_medium .datos .descripcion .boton_compracachorros {
->>>>>>> 95f06a193039a09134ae56b00bbf13cc729760d5
     font-family: "Poppins", sans-serif;
     border-radius: 1.25rem;
     background-color: transparent;
@@ -1690,16 +1675,14 @@
     transition: all 0.5s ease-in-out 0s;
     padding: 0.3rem 0.6rem;
     width: 44%; }
-<<<<<<< HEAD
+/*<<<<<<< HEAD
     .box_raza .datos .descripcion .boton_compracachorros:hover {
-=======
+=======*/
     .box_raza_medium .datos .descripcion .boton_compracachorros:hover {
->>>>>>> 95f06a193039a09134ae56b00bbf13cc729760d5
       background-color: #403944;
       color: white;
       transition: all 0.5s ease-in-out 0s; }
 
-<<<<<<< HEAD
 .chico {
   background-color: #fcb4b4; }
 
@@ -1708,7 +1691,7 @@
 
 .grande {
   background-color: #ccd0d7; }
-=======
+
 .section_large {
   width: 100%;
   display: flex;
@@ -1778,7 +1761,6 @@
       background-color: #403944;
       color: white;
       transition: all 0.5s ease-in-out 0s; }
->>>>>>> 95f06a193039a09134ae56b00bbf13cc729760d5
 
 .active {
   background-color: white;
