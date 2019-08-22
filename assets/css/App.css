@@ -429,7 +429,7 @@
 
 .box_oferta {
   background-color: #ea3968;
-  background-image: url(../../images/img_svg/fondo-01.svg);
+  background-image: url(/assets/images/img_svg/fondo-01.svg);
   margin: 0px; }
   .box_oferta .box_center_oferta {
     width: 50%;

@@ -1,4 +1,4 @@
-let testimony = ['view/images/img_photos/testimonio01.jpg', 'view/images/img_photos/testimonio02.jpg', 'view/images/img_photos/testimonio03.jpg'];
+let testimony = ['/criamas/assets/images/img_photos/testimonio01.jpg', '/criamas/assets/images/img_photos/testimonio02.jpg', '/criamas/assets/images/img_photos/testimonio03.jpg'];
 let clientes= [
     {
         id: 0,

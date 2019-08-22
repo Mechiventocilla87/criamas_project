@@ -1,6 +1,6 @@
 //declaro mi data = objetos + imagenes
 
-let imagenes = ['view/images/img_photos/pomerania.png', 'view/images/img_photos/schnauzer.png', 'view/images/img_photos/caniche03.png']
+let imagenes = ['/criamas/assets/images/img_photos/pomerania.png', '/criamas/assets/images/img_photos/schnauzer.png', '/criamas/assets/images/img_photos/caniche03.png']
 let banners = [
     {
         id: 0,

@@ -10,7 +10,7 @@ $(document).ready(function(){
           Swal.fire({
             title: 'Mensaje Enviado!',
             text: 'Pronto nos comunicaremos.',
-            imageUrl: 'view/images/img_photos/caniche02.png',
+            imageUrl: '/assets/images/img_photos/caniche02.png',
             imageWidth: 400,
             imageHeight: 200,
             imageAlt: 'Custom image',
@@ -56,4 +56,3 @@ $(document).ready(function(){
       e.preventDefault(); //This is to Avoid Page Refresh and Fire the Event "Click"
     });
 });
-  
