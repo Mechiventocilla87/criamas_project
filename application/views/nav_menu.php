@@ -10,10 +10,10 @@
         
         <ul class="menu_row">
           <li>
-            <a href="index.php" class="link_a a_url">Home</a>
+            <a href="<?php echo base_url('index.php');?>" class="link_a a_url">Home</a>
           </li>
           <li>
-            <a href="index.php#nosotros" class="link_a a_url">Nosotros</a>
+            <a href="<?php echo base_url('index.php#nosotros');?>" class="link_a a_url">Nosotros</a>
           </li>
           <li>
             <a href="<?php echo base_url('index.php/welcome/puppies');?>" class="link_a a_url">Cachorros</a>
