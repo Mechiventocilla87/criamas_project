@@ -1,6 +1,6 @@
 <?php
 
-require APPPATH . '/libraries/REST_Controller.php';
+require APPPATH . 'libraries/REST_Controller.php';
 
 
 class CachorroRest extends REST_Controller{
@@ -9,24 +9,62 @@ class CachorroRest extends REST_Controller{
 	{
 		// Construct the parent class
 		parent::__construct();
-
-		// Configure limits on our controller methods
-		// Ensure you have created the 'limits' table and enabled 'limits' within application/config/rest.php
-		$this->methods['cachorros_get']['limit'] = 500; // 500 requests per hour per user/key
-		$this->methods['cachorros_post']['limit'] = 100; // 100 requests per hour per user/key
-		$this->methods['cachorros_delete']['limit'] = 50; // 50 requests per hour per user/key
+		$this->load->database();
 	}
-
+	
 	/***
-	 *
+	 * @param int $id
+	 *  Busqueda por id : GET: localhost/criamas/index.php/api/CachorroRest/1
+	 *  Busqueda todos: GET: localhost/criamas/index.php/api/CachorroRest
 	 */
-	public function cachorros_get(){
-		$this->load->model('Cachorros_Model','CM',true);
-		$cachorros= $this->$this->CM->getAll();
-		if ($cachorros){
-			$this->response($cachorros, REST_Controller::HTTP_OK);
+	public function index_get($id = 0)
+	{
+		if(!empty($id)){
+			$data = $this->db->get_where("cachorros", ['id' => $id])->row_array();
+		}else{
+			$data = $this->db->get("cachorros")->result();
 		}
 
+		$this->response($data, REST_Controller::HTTP_OK);
+	}
+
+	/**
+	 * Get All Data from this method.
+	 *  save: POST: localhost/criamas/index.php/api/CachorroRest (data en formdata)
+	 * @return Response
+	 */
+	public function index_post()
+	{
+		$input = $this->input->post();
+		$this->db->insert('cachorros',$input);
+
+		$this->response(['Cachorro created successfully.'], REST_Controller::HTTP_OK);
+	}
+
+	/**
+	 * Get All Data from this method.
+	 * *  save: PUT: localhost/criamas/index.php/api/CachorroRest (data en formdata)
+	 * @return Response
+	 */
+	public function index_put($id)
+	{
+		$input = $this->put();
+		$this->db->update('cachorros', $input, array('id'=>$id));
+
+		$this->response(['Cachorro updated successfully.'], REST_Controller::HTTP_OK);
+	}
+
+
+	/**
+	 * Get All Data from this method.
+	 * *  eliminar: DELETE: localhost/criamas/index.php/api/CachorroRest/1
+	 * @return Response
+	 */
+	public function index_delete($id)
+	{
+		$this->db->delete('cachorros', array('id'=>$id));
+
+		$this->response(['Cachorro deleted successfully.'], REST_Controller::HTTP_OK);
 	}
 
 }
