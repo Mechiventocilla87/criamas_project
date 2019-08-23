@@ -158,7 +158,7 @@
 //     changePage(1);
 // };
 
-fetch(' http://localhost/criamas/index.php/api/CachorroRest')
+fetch('http://localhost/criamas/index.php/api/CachorroRest')
   .then(response => response.json())
   .then( data => {
       for (let i = 0; i < data.records.length; i++) {
