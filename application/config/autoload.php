@@ -136,5 +136,5 @@ $autoload['model'] = array();
 
 
 
-$autoload['helper'] = array('url');
+$autoload['helper'] = array('form', 'url', 'utility');
 $autoload['libraries'] = array('database');

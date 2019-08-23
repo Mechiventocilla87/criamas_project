@@ -6,7 +6,7 @@
     </button>
     <div class='content'>
         <div class='box-image'>
-            <img src="assets/images/img_photos/modal-01.png" alt="">
+            <img src="<?php echo asset_url();?>/images/img_photos/modal-01.png" alt="">
         </div>
         <div class='text'>
             <h5 class='title-modal'>¡Subscribite!</h5>

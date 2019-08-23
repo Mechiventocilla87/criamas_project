@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="footer-div">
         <div class="contact-footer">
-            <img class="logo-inf" src="assets/images/img_svg/logo_criamas-02.svg" alt="logo criamas" />
+            <img class="logo-inf" src="<?php echo asset_url();?>/images/img_svg/logo_criamas-02.svg" alt="logo criamas" />
             <p>Nicaragua 5596 - CABA</p>
             <p>+54 9 11 4975-2537</p>
             <p>+54 9 11 3589-8532</p>

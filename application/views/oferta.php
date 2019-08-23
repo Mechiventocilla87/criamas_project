@@ -7,7 +7,7 @@
         </div>
         <div class="box_second">
             <div class="content_image">
-                <img class="img_oferta" src="assets/images/img_photos/bulldog-oferta-02.png" alt="" />
+                <img class="img_oferta" src="<?php echo asset_url();?>/images/img_photos/bulldog-oferta-02.png" alt="" />
             </div>
         </div>
         <div class="box_third">

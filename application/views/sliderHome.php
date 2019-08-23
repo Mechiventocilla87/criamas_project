@@ -11,7 +11,7 @@
                 </a>    
             </div>            
             <div class="image-slide">
-               <img class="image_dog" src='assets/images/img_photos/pomerania.png' alt= />
+               <img class="image_dog" src='<?php echo asset_url();?>/images/img_photos/pomerania.png' alt= />
             </div>
         </div>
     </div>

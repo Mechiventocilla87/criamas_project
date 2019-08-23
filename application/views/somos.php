@@ -36,7 +36,7 @@
     </div>
     <div class="img-somos">
         <div class="img_content_somos">
-            <img class="dogs_somos" src="assets/images/img_photos/somos.png" alt=" imagen diversas razas de perros " />
+            <img class="dogs_somos" src="<?php echo asset_url();?>/images/img_photos/somos.png" alt=" imagen diversas razas de perros " />
         </div>
     </div>
 </div>

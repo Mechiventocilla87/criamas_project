@@ -4,7 +4,7 @@
   <div class="box_nav" id='navbar-header'>
     <nav class="nav_menu">
       <div class="logo_container newSize">
-        <img src="assets/images/img_svg/logo_criamas-01.svg" />
+        <img src="<?php echo asset_url();?>/images/img_svg/logo_criamas-01.svg" />
       </div>
       <div class="container_buttons">			  
         
@@ -16,10 +16,10 @@
             <a href="index.php#nosotros" class="link_a a_url">Nosotros</a>
           </li>
           <li>
-            <a href="puppies.php" class="link_a a_url">Cachorros</a>
+            <a href="<?php echo base_url('index.php/welcome/puppies');?>" class="link_a a_url">Cachorros</a>
           </li>
           <li>
-            <a href="traslado.php" class="link_a a_url">Traslados</a>
+              <a href="<?php echo base_url('index.php/welcome/traslado');?>" class="link_a a_url">Traslados</a>
           </li>
           <li>
             <a href="#" class="link_a a_url">Pet shop</a>

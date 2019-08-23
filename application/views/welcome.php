@@ -110,12 +110,12 @@ require_once "header.php";
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src='assets/js/navheader.js'></script>
-<script src='assets/js/slide.js'></script>
-<script src='assets/js/comments.js'></script>
-<script src='assets/js/menu-mobile.js'></script>
-<script src='assets/js/sweet.js'></script>
-<script src='assets/js/modal.js'></script>
+<script src='<?php echo asset_url();?>/js/navheader.js'></script>
+<script src='<?php echo asset_url();?>/js/slide.js'></script>
+<script src='<?php echo asset_url();?>/js/comments.js'></script>
+<script src='<?php echo asset_url();?>/js/menu-mobile.js'></script>
+<script src='<?php echo asset_url();?>/js/sweet.js'></script>
+<script src='<?php echo asset_url();?>/js/modal.js'></script>
 </body>
 
 </html>

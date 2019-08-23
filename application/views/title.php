@@ -8,9 +8,9 @@
     <meta name="keywords" content="www.criamas.com, criamas, Mascotas, pets, perros, criamas" />
     <title>Criamas | Amor</title>
     <!-- logo -->
-    <link rel="shortcut icon" href="assets/images/logo.png" />
+    <link rel="shortcut icon" href="<?php echo asset_url();?>/images/logo.png" />
     <!-- Estilos -->
-    <link rel="stylesheet" href="assets/styles/css/App.css">
+    <link rel="stylesheet" href="<?php echo asset_url();?>/css/App.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">

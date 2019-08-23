@@ -8,7 +8,7 @@
         <div class="div-com">
             <div class="box_comillas">
                 <div class="content_comments">
-                    <img class="image_cliente" src="assets/images/img_photos/testimonio01.jpg" alt="">
+                    <img class="image_cliente" src="<?php echo asset_url();?>/images/img_photos/testimonio01.jpg" alt="">
                 </div>
             </div>
             <span class="nombre_cliente">Yamila Rodriguez</span>
