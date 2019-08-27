@@ -34,8 +34,9 @@ require_once "header.php";
 		<p class="bajada_contact">Hacenos una consulta, con gusto te responderemos.</p>
 		<div class="div-con">
 			<div class="form-contact">
-				<form action="enviar.php" role="form" method="post" class="form_contact" id="contact-form">
-					<div >
+				<form action="<?=base_url('email')?>"
+					  enctype="multipart/form-data"  method="POST" class="form_contact" id="contact-form">
+					<div>
 						<label for="names">Nombres *</label>
 						<input type="text" id="names" name="nombre" required>
 
@@ -43,7 +44,7 @@ require_once "header.php";
 						<input type="number" id="phone" name="telefono">
 
 						<label for="email">Correo electronico *</label>
-						<input type="text" id="email" name="correo" required>
+						<input type="text" id="email" name="email" required>
 
 						<label for="mensaje">Mensaje *</label>
 						<input class="input-msj" id="mensaje" name="mensaje" required>

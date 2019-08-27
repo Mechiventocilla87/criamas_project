@@ -53,10 +53,15 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['assets/(:any)'] = 'assets/$1';
+
+$route['send-email'] = 'emailController';
+$route['email'] = 'emailController/send';
+
 /*
 | -------------------------------------------------------------------------
 | Sample REST API Routes
 | -------------------------------------------------------------------------
+
 */
 /*$route['api/example/users/(:num)'] = 'api/example/users/id/$1'; // Example 4*/
 /*$route['api/example/users/(:num)(\.)([a-zA-Z0-9_-]+)(.*)'] = 'api/example/users/id/$1/format/$3$4'; // Example 8*/
