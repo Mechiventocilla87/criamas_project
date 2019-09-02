@@ -11,7 +11,7 @@ $config = array(
 	"mailtype" => "html", //plaintext 'text' mails or 'html'
 	"send_multipart" => FALSE,
 	"charset"  => "utf-8",
-	"subject" => "Criamas Contact Contact",
+	"subject" => "Criamas Contacto",
 	"wordwrap" => TRUE,
 	"newline"  => "\r\n"
 );

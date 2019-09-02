@@ -158,16 +158,16 @@
 //     changePage(1);
 // };
 
-fetch('http://localhost/criamas/index.php/api/CachorroRest')
+fetch('http://localhost/criamas/api/CachorroRest')
   .then(response => response.json())
   .then( data => {
-      for (let i = 0; i < data.records.length; i++) {
+      for (let i = 0; i < data.length; i++) {
         let section = document.querySelector(".section_small");
         section.innerHTML += `<div class='box_raza'>
         <div class='box_image'>
-            <img src=${data.records[i].img} alt="beagle">
+            <img src=${data[i].img} alt="beagle">
         </div>
-          <div class='datos ${data.records[i].tamanio}'>
+          <div class='datos ${data[i].tamanio}'>
               <div class='titulos'>
                   <div class='iconos'>
                       <i class="fas fa-dog"></i>
@@ -175,11 +175,11 @@ fetch('http://localhost/criamas/index.php/api/CachorroRest')
                           <i class="fas fa-heart"></i> 
                       </div>
                   </div>
-                  <h6 class='nombre-raza'>${data.records[i].raza}</h6>
+                  <h6 class='nombre-raza'>${data[i].raza}</h6>
               </div>
               <div class='descripcion'>
-                  <p class='first_p'>${data.records[i].nombres}</p>
-                  <p class='second_p'><span class='bold_origin'>Origen: </span>${data.records[i].origen}</p>
+                  <p class='first_p'>${data[i].nombres}</p>
+                  <p class='second_p'><span class='bold_origin'>Origen: </span>${data[i].origen}</p>
                   <button class='boton_compracachorros'>Comprar</button>
               </div>
           </div>

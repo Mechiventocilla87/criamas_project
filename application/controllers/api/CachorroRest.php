@@ -10,6 +10,7 @@ class CachorroRest extends REST_Controller{
 		// Construct the parent class
 		parent::__construct();
 		$this->load->database();
+		$this->load->library("pagination");
 	}
 	
 	/***
@@ -30,7 +31,7 @@ class CachorroRest extends REST_Controller{
 
 	/**
 	 * Get All Data from this method.
-	 *  save: POST: localhost/criamas/index.php/api/CachorroRest (data en formdata)
+	 *  save: POST: localhost/criamas/api/CachorroRest (data en formdata)
 	 * @return Response
 	 */
 	public function index_post()
@@ -43,7 +44,7 @@ class CachorroRest extends REST_Controller{
 
 	/**
 	 * Get All Data from this method.
-	 * *  save: PUT: localhost/criamas/index.php/api/CachorroRest (data en formdata)
+	 * *  save: PUT: localhost/criamas/api/CachorroRest (data en formdata)
 	 * @return Response
 	 */
 	public function index_put($id)

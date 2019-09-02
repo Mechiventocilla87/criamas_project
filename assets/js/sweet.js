@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('#contact-form').on('submit',function(e) {  //Don't foget to change the id form
     $.ajax({
-        url:'/criamas/index.php/email', //===PHP file name====
+        url:'/criamas/email', //===PHP file name====
         data:$(this).serialize(),
         type:'POST',
         success:function(data){
@@ -29,7 +29,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#traslados-form').on('submit',function(e) {  //Don't foget to change the id form
     $.ajax({
-        url:'/criamas/index.php/email', //===PHP file name====
+        url:'/criamas/email', //===PHP file name====
         data:$(this).serialize(),
         type:'POST',
         success:function(data){

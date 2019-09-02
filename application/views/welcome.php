@@ -46,8 +46,8 @@ require_once "header.php";
 						<label for="email">Correo electronico *</label>
 						<input type="text" id="email" name="email" required>
 
-						<label for="mensaje">Mensaje *</label>
-						<input class="input-msj" id="mensaje" name="mensaje" required>
+						<label for="message">Mensaje *</label>
+						<input class="input-msj" id="message" name="message" required>
 						<div class="container_contact">
 							<input type="submit" value="Enviar" class="button-con" id="btnSend">
 						</div>
