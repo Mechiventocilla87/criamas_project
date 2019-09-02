@@ -16,7 +16,7 @@
             <a href="<?php echo base_url('/#nosotros');?>" class="link_a a_url">Nosotros</a>
           </li>
           <li>
-            <a href="<?php echo base_url('/welcome/puppies');?>" class="link_a a_url">Cachorros</a>
+            <a href="<?php echo base_url('/cachorroCtrl/index');?>" class="link_a a_url">Cachorros</a>
           </li>
           <li>
               <a href="<?php echo base_url('/welcome/traslado');?>" class="link_a a_url">Traslados</a>

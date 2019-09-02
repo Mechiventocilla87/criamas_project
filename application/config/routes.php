@@ -54,8 +54,10 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['assets/(:any)'] = 'assets/$1';
 
-$route['send-email'] = 'emailController';
-$route['email'] = 'emailController/send';
+$route['send-email'] = 'email';
+$route['email'] = 'email/send';
+
+$route['cachorro/(:num)'] = 'cachorro';
 
 /*
 | -------------------------------------------------------------------------

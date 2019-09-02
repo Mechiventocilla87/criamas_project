@@ -31,12 +31,6 @@ class Welcome extends CI_Controller {
 	}
 
 
-	public function puppies()
-	{
-		$data['mainpage'] = 'puppies';
-		$this->load->view('puppies',$data);
-	}
-
 	public function enviar()
 	{
 		$data['mainpage'] = 'enviartras';

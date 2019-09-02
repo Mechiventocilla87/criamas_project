@@ -20,14 +20,23 @@ class CachorroRest extends REST_Controller{
 	 */
 	public function index_get($id = 0)
 	{
+		$limit = $this->post('limit');
+		$offset = $this->post('offset');
+
 		if(!empty($id)){
 			$data = $this->db->get_where("cachorros", ['id' => $id])->row_array();
 		}else{
 			$data = $this->db->get("cachorros")->result();
 		}
-
 		$this->response($data, REST_Controller::HTTP_OK);
 	}
+
+
+	public function count(){
+		$data = $this ->db->count_all('cachorros');
+		$this->response($data, REST_Controller::HTTP_OK);
+	}
+
 
 	/**
 	 * Get All Data from this method.
