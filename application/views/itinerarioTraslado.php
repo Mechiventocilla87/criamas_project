@@ -4,7 +4,7 @@
     <p>Revisa nuestros viajes, y chequea todos nuestros variados destinos, llegamos a donde vos necesites</p>
     <!-- ESTA ROW ES LA FILA GENERAL QUE CONTIENE LAS DOS SECCIONES IZQ Y DERE -->
     <!-- INICIO DEL FORM / TODO ESTA METIDO DENTRO DE ESTA ETIQUETA -->
-    <form action="<?php echo base_url('index.php/welcome/enviar');?>" method="post">
+    <form action="<?=base_url('email')?>" method="post">
         <div class="row">
             <!-- SECCION IZQUIERDA:ESTA COLUMNA CONTIENE EL FILTRO BUSCADOR -->
             <div class="col-sm seccion-izq">

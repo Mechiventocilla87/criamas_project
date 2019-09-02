@@ -20,9 +20,11 @@ class EmailController extends CI_Controller {
 
 		$from = $this->config->item('smtp_user');
 		$newline = $this->config->item('newline');
+		$subject = $this->config->item('subject');
 
 		$to = $this->input->post('email');
 		$message = $this->input->post('message');
+		$this->email->subject($subject);
 
 
 		$this->email->set_newline($newline);

@@ -10,7 +10,7 @@ $(document).ready(function(){
           Swal.fire({
             title: 'Mensaje Enviado!',
             text: 'Pronto nos comunicaremos.',
-            imageUrl: '/assets/images/img_photos/caniche02.png',
+            imageUrl: '/criamas/assets/images/img_photos/caniche02.png',
             imageWidth: 400,
             imageHeight: 200,
             imageAlt: 'Custom image',
@@ -29,7 +29,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#traslados-form').on('submit',function(e) {  //Don't foget to change the id form
     $.ajax({
-        url:'enviartras.php', //===PHP file name====
+        url:'/criamas/index.php/email', //===PHP file name====
         data:$(this).serialize(),
         type:'POST',
         success:function(data){
@@ -38,11 +38,11 @@ $(document).ready(function(){
           Swal.fire({
             title: 'Solicitud Recibida!',
             text: 'Pronto nos comunicaremos.',
-            imageUrl: 'view/images/img_photos/bulldog-oferta-02.png',
+            imageUrl: '/criamas/assets/images/img_photos/bulldog-oferta-02.png',
             imageWidth: 400,
             imageHeight: 200,
             imageAlt: 'Custom image',
-            background: 'url(view/images/img_photos/marco-huella.jpg)',
+            background: 'url(criamas/assets/images/img_photos/marco-huella.jpg)',
             width: 620,
             height: 400,
             animation: false
