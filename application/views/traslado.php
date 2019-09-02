@@ -19,7 +19,7 @@
                 <p class="title-3">realiza tu consulta</p>
             </div>
             <div class="dog">
-                <img class="dog_img" src="../../assets/images/img_photos/travel02.png" alt="Traslados">
+                <img class="dog_img" src="../assets/images/img_photos/travel02.png" alt="Traslados">
             </div>
         </div>
     </div>

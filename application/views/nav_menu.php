@@ -10,16 +10,16 @@
         
         <ul class="menu_row">
           <li>
-            <a href="<?php echo base_url('index.php');?>" class="link_a a_url">Home</a>
+            <a href="<?php echo base_url('/');?>" class="link_a a_url">Home</a>
           </li>
           <li>
-            <a href="<?php echo base_url('index.php#nosotros');?>" class="link_a a_url">Nosotros</a>
+            <a href="<?php echo base_url('/#nosotros');?>" class="link_a a_url">Nosotros</a>
           </li>
           <li>
-            <a href="<?php echo base_url('index.php/welcome/puppies');?>" class="link_a a_url">Cachorros</a>
+            <a href="<?php echo base_url('/welcome/puppies');?>" class="link_a a_url">Cachorros</a>
           </li>
           <li>
-              <a href="<?php echo base_url('index.php/welcome/traslado');?>" class="link_a a_url">Traslados</a>
+              <a href="<?php echo base_url('/welcome/traslado');?>" class="link_a a_url">Traslados</a>
           </li>
           <li>
             <a href="#" class="link_a a_url">Pet shop</a>
@@ -28,7 +28,7 @@
             <a href="http://blog.criamas.com/" class="link_a a_url">Blog</a>
           </li>
           <li>
-            <a href="index.php#contacto" class="link_a a_url">Contacto</a>
+            <a href="<?php echo base_url('/#contacto');?>" class="link_a a_url">Contacto</a>
           </li>
           <li class = 'redes_mobile'>
           <a href="https://api.whatsapp.com/send?phone=541149752537&text=Quiero%20mas%20informacion%20Sobre%20las%20Razas%20de%20Perros%20Disponibles">

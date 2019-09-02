@@ -30,7 +30,7 @@
             <h5>Información</h5>
             <ul>
                 <li class="link-inf">
-                    <a href="index.php#nosotros" class="link_url">Nosotros</a>
+                    <a href="/#nosotros" class="link_url">Nosotros</a>
                 </li>
                 <li class="link-inf">
                     <a href="/puppies" class="link_url">Cachorros</a>
@@ -45,7 +45,7 @@
                     <a href="http://blog.criamas.com/" class="link_url">Blog</a>
                 </li>
                 <li class="link-inf">
-                    <a href="index.php#contacto" class="link_url">Contacto</a>
+                    <a href="/#contacto" class="link_url">Contacto</a>
                 </li>
             </ul>
         </div>
